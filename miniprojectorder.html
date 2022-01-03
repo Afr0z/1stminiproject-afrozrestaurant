@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Order Now</title>
+    </head>
+    <body>
+        <script>
+            function drogon()
+            {
+                var a=document.getElementById("phonenumber").value;
+                var b=document.getElementById("name").value;
+                var c=document.getElementById("address").value;
+                if(a=="" || b=="" || c=="")
+                {
+                    alert("blank values are not allowed")
+                    return false;
+                }
+                if(isNaN(a))
+                {
+                    document.getElementById("messages").innerHTML="only numbers allowed";
+                    return false;
+                }
+                if(a.length<10 || a.length>10)
+                {
+                    document.getElementById("messages").innerHTML="phone number must be 10 digits";
+                    return false;
+                }
+            }
+        </script>
+
+        <h1>Enter the below details to place your Order</h1>
+        <form onsubmit="return drogon()">
+            Name: <input type="text" id="name" value="" autocomplete="off">
+            <span id="chat"></span><br><br>
+            Phone no: <input type="text" id="phonenumber" value="" autocomplete="off">
+            <span id="messages"></span><br><br>
+            Address: <input type="text" id="address" value="" autocomplete="off">
+            <span id="msg"></span><br><br>
+            <input type="submit" id="Submit" class="button" formaction="/miniprojectmsg.html">
+            <input type="reset" id="reset" class="button1">
+        </form>
+    </body>            
+</html>

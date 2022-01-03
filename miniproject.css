@@ -1,0 +1,85 @@
+span
+{
+    color: palevioletred;
+}
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+html
+{
+    font-size: 65%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+}
+body
+{
+    background-color: #f7f7f7;
+}
+
+.heading
+{
+    text-align: center;
+    font-size: 3.5rem;
+    color: #666;
+}
+header
+{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(red, green, blue, alpha);
+}
+header .affu
+{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #666;
+}
+header .navbar a
+{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #666;
+}
+header .navbar a:hover
+{
+    color: palevioletred;
+}
+.home
+{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+.home .content
+{
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+}
+.home .image
+{
+    flex: 1 1 40rem;
+}
+.home .image img
+{
+    width: 100%;
+    padding: 1rem;
+}
+.home .content h3
+{
+    font-size: 5rem;
+}
+home .content p
+{
+    font-size: 2rem;
+    padding: 1rem 0;
+}
